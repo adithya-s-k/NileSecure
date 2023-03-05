@@ -1,1 +1,0 @@
-Microsoft support scraper code - Raunak

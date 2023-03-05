@@ -1,2 +1,3 @@
 client/.env
 frontend/.env
+scraper/env
