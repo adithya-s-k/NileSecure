@@ -20,9 +20,8 @@ export default async function handler(req, res) {
     }
 
     // Search the database for matching documents
-    const searchResults = await SearchResult.find(searchQuery);
-    console.log(searchResults);
-    res.status(200).json({ results: searchResults });
+    const resultsFromDb = await SearchResult.find(searchQuery);
+    res.status(200).json({ results: resultsFromDb });
   } catch (error) {
     console.log(req.query);
     res.status(400).json({ error: error.message });

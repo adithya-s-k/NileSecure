@@ -29,6 +29,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="min-h-screen bg-gray-100 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+        <div>
+          <img
+            src="https://nilesecure.com/wp-content/uploads/2022/03/Nile_logo_blue_300ppi-scaled.jpg"
+            alt="Nile Logo"
+            className="mx-auto h-12 w-auto"
+          />
+        </div>
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-white py-8 px-4 shadow rounded-lg sm:px-10">
             <div className="mt-6">
@@ -43,7 +50,7 @@ export default function Home() {
                   type="text"
                   name="search"
                   id="search"
-                  className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                  className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md p-3 bg-slate-200"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -60,7 +67,7 @@ export default function Home() {
                 <select
                   id="os"
                   name="os"
-                  className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                  className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md bg-slate-200 p-3"
                   value={osFilter}
                   onChange={(e) => setOsFilter(e.target.value)}
                 >
@@ -82,7 +89,7 @@ export default function Home() {
                 <select
                   id="company"
                   name="company"
-                  className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                  className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md bg-slate-200 p-3"
                   value={companyFilter}
                   onChange={(e) => setCompanyFilter(e.target.value)}
                 >
